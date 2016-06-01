@@ -1,0 +1,21 @@
+<div class="jumbotron">
+  <h1 class="text-center">Hi Lo Game!</h1>
+</div>
+<div class="row">
+  <div class="col-sm-12 text-center">
+    <h1 class="alert-danger"><%= flash[:alert] %></h1>
+    <h1><%= @result %></h1>
+    <br/>
+    <p>Guesses: <%= @counter %></p>
+    <br/>
+    <!-- <%= session[:comp_number] %> -->
+    <p>Enter your number: </p>
+    <form action="/game" method="get">
+      <input type="number" name="guess" min="1" max="100" required/>
+      <input type="submit" id="btn-check" value="Guess!"/>
+    </form>
+    <p><form action="/newgame" method="get">
+      <input type="submit" value="New Game?">
+    </form></p>
+  </div> <!-- Ends Column -->
+</div> <!-- Ends Row -->

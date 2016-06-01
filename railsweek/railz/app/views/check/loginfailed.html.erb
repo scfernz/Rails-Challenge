@@ -1,0 +1,11 @@
+<div class="jumbotron">
+  <h1 class="text-center">Hi Lo Game!</h1>
+</div>
+<h1 class="alert-danger text-center"><%= flash.now[:alert] %></h1>
+<div class="col-sm-12 text-center">
+  <form action="/check_password" method="get">
+    <p><input type="text" name="userid" placeholder="Username"/></p>
+    <p><input type="text" name="password" placeholder="Password"/></p>
+    <p><input type="submit" value="Enter"/></p>
+  </form>
+</div> <!-- end of col -->
